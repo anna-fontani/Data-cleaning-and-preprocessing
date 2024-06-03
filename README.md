@@ -82,7 +82,6 @@ Small countries have a potential of optimization to reach high results demonstra
 - Ireland is 11th in area per farm metric and 12th in farms number. Considering relatively small size of Ireland, the number of farms is high. Only Lithuania has more farms in the same country size group.
 - Ireland ranks 4th in managers with full training ratio too all labour, which demonstrates high standards in labour training. 
 
-
 ### Scaling 
 
 Difference in magnitude in features can create problems for ML algorithms. Algorithms that use gradient descent require scaling due to possible step size differences. Distance-based algorithms like k-Means are significantly affected by range of features as they are based on distances between data points (Bhandari, 2024). Our dataframe contained data with different magnitude and required it to be addressed. 
@@ -92,7 +91,23 @@ Table 4. Scaling results.
 
 ![image](https://github.com/anna-fontani/Data-cleaning-and-preprocessing/assets/149007143/a3cd53a3-4655-4f55-9cf3-1c2e6afc881f)
 
-In next projects we will try different ML models, evaluate their results, and apply hyperparameters tuning to optimize models performance. 
+### Correlation and Heat Map
+
+Correlation coefficient helps to see relationships between two variables. It demonstrates the measure of the strength of association between two variables. The value of correlation coefficient can be between -1 to +1, where 1 means that they are highly correlated and 0 means no linear relationship between values, the value r < 0 indicates negative correlation (Stojiljković, n.d.).
+
+A correlation heatmap displays the correlation between multiple variables as a color-coded matrix. The color of each cell represents the strength and direction of the correlation, with darker colors indicating stronger correlations (Chip, 2023).
+
+To perform linear regression in ML section, the numeric target variable should be linearly related to at least one another numeric variable. Correlation heatmap reveals some useful insights. 
+
+![image](https://github.com/anna-fontani/Data-cleaning-and-preprocessing/assets/149007143/14db82cd-58d0-401e-87fe-0c89d6e205bc)
+
+Considering the financial output of farms throughout EU, correlation heatmap and matrix (cells 49-50) demonstrate high correlation of financial output and number of managers with basic training (correlation = 0.52), nonfamily labour employed (correlation = 0.97), country area (correlation = 0.87), and agricultural area used (correlation = 0.89). 
+
+Whereas total area and agricultural area usage can be called self-evident factors, for the more land, the higher the profit can be, high correlation with nonfamily labour and number of managers with basic training lead to interesting insights. Notably, managers with full training or only practically trained have significantly lower correlation results. Total labour and farms number have very low correlation, which could signify importance of other factors when we discuss financial output, such as training, technology, government support, and others. 
+
+In future research, it would be essential to consider areas that demand managers with different level of training. Nonfamily labour employed can also signify other developments of farms (technological, professional), which are not displayed by data available for this research. 
+
+In next projects we will apply different ML models, evaluate their results, and perform hyperparameters tuning to optimize models performance. 
 
 ## References
 
@@ -101,5 +116,9 @@ Bhandari, A. (2024). Feature Scaling: Engineering, Normalization, and Standardiz
 Kang, H. (2013). The Prevention and Handling of the Missing Data. Korean Journal of Anesthesiology, [online] 64(5), pp.402–406. doi:https://doi.org/10.4097/kjae.2013.64.5.402.
 
 Towards Data Science (2019). Preprocessing: Regression Imputation of Missing Continuous Values. [online] Towards Data Science. Available at: https://towardsdatascience.com/preprocessing-regression-imputation-of-missing-continuous-values-f612179bafb4.
+
 Sarath, S.L. (2019). Pairplot Visualization. [online] Medium. Available at: https://medium.com/analytics-vidhya/pairplot-visualization-16325cd725e6.
 
+Stojiljković, M. (n.d.). NumPy, SciPy, and Pandas: Correlation With Python. [online] realpython.com. Available at: https://realpython.com/numpy-scipy-pandas-correlation-python [Accessed 5 Apr. 2024].
+
+Chip (2023). How to read a correlation heatmap? [online] Quanthub. Available at: https://www.quanthub.com/how-to-read-a-correlation-heatmap/.
