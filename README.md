@@ -55,6 +55,10 @@ Following pair plot reflects data relationships.
 
 Figure 3. Pairwise plot of European farms structure dataset
 
+![image](https://github.com/anna-fontani/Data-cleaning-and-preprocessing/assets/149007143/9af4ca57-4f38-4ae0-8f3c-0fc12d43afdd)
+
+Figure 4. Density plots for main features.
+
 Pairwise plot is useful as it demonstrates relationships between features with diagonal plots being the univariate histograms or distributions for each feature (Sarath, 2019). Diagonal plots show clear left skewness. Some plots have points forming a line – a higher correlation of farms number and total labour, country area and used agricultural area. Other features demonstrate more scattered picture with different outliers and underlying factors. Interestingly, financial output plot shows that countries with small area and relatively low number of workforce can reach great profits in agriculture. 
 
 To deepen understanding of data, we added calculated values: output per farm, labour per farm, area per farm, ratio of fully trained managers. 
