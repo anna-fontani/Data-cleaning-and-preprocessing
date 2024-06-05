@@ -82,15 +82,6 @@ Small countries have a potential of optimization to reach high results demonstra
 - Ireland is 11th in area per farm metric and 12th in farms number. Considering relatively small size of Ireland, the number of farms is high. Only Lithuania has more farms in the same country size group.
 - Ireland ranks 4th in managers with full training ratio too all labour, which demonstrates high standards in labour training. 
 
-### Scaling 
-
-Difference in magnitude in features can create problems for ML algorithms. Algorithms that use gradient descent require scaling due to possible step size differences. Distance-based algorithms like k-Means are significantly affected by range of features as they are based on distances between data points (Bhandari, 2024). Our dataframe contained data with different magnitude and required it to be addressed. 
-When comparing normalization and standardization, standardization is less sensitive to outliers, preserves relationships between data, and can be used for data with unknown distribution (Bhandari, 2024). For these reasons, StandardScaler was applied to the dataframe.
-
-Table 4. Scaling results.
-
-![image](https://github.com/anna-fontani/Data-cleaning-and-preprocessing/assets/149007143/a3cd53a3-4655-4f55-9cf3-1c2e6afc881f)
-
 ### Correlation and Heat Map
 
 Correlation coefficient helps to see relationships between two variables. It demonstrates the measure of the strength of association between two variables. The value of correlation coefficient can be between -1 to +1, where 1 means that they are highly correlated and 0 means no linear relationship between values, the value r < 0 indicates negative correlation (Stojiljković, n.d.).
