@@ -102,8 +102,6 @@ In next projects we will apply different ML models, evaluate their results, and 
 
 ## References
 
-- Bhandari, A. (2024). Feature Scaling: Engineering, Normalization, and Standardization. [online] Analytics Vidhya. Available at: https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization.
-
 - Chip (2023). How to read a correlation heatmap? [online] Quanthub. Available at: https://www.quanthub.com/how-to-read-a-correlation-heatmap/.
 
 - Kang, H. (2013). The Prevention and Handling of the Missing Data. Korean Journal of Anesthesiology, [online] 64(5), pp.402–406. doi:https://doi.org/10.4097/kjae.2013.64.5.402.
