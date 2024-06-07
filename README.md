@@ -1,9 +1,10 @@
 # Data Cleaning, Preprocessing and EDA
 
-This example project demonstrates data cleaning and preprocessing before ML models application.  
-It also includes data melting as initial dataset lacked essential information (country area) necessary for analysis.
+This project explores European farms structure dataset from Eurostat with different farms features: agricultural area, farms number, labour structure, financial output among others. 
 
-EDA (Exploratory Data Analysis) is performed to study data in-depth. 
+Data cleaning and preprocessing was performed to prepare data for ML models application. The project also includes data melting as initial dataset lacked essential information (country area) necessary for analysis.
+
+EDA (Exploratory Data Analysis) is done to study data in-depth. 
 
 ## Research question
 - Explore and analyze factors influencing farms performance in European Union in general and Ireland in particular.
